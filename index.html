@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<img src="./weather.png" width="100%" height="200px">
+
+<body style="background-image: url(./sea.jpg);background-size:100%;">
+
+    <div id="info"></div>
+
+    <!-- <div class="container row" style="position: fixed; bottom: 0; right: 0; width: 200px; background-color: white;"> -->
+
+    <div class="container row" style="align:pull-center">
+        <div class=" jumbotron col-sm-4 pull-center">
+            <form id="formLogin" action="/filmServer/login" method="post">
+                <div>
+                    <select id="sel" aria-placeholder="список">
+                        <option></option>
+                        <option>Moscow</option>
+                        <option>Saint Petersburg,ru</option>
+                        <option>Paris,fr</option>
+                        <option>Chita,ru</option>
+                        <option>Kyra</option>
+                        <option>Sochi</option>
+                        <option>Novosibirsk</option>
+                        <option>Irkutsk</option>
+                        <option>Khabarovsk</option>
+                        <option>Kaliningrad</option>
+                        <option>Vladivostok</option>
+                    </select>
+                    <div>
+                        <input type="text" id="write">
+                    </div>
+                    <input class="btn btn-primary" data-time="day" type="submit" value="Прогноз на 1 день" />
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container-field">
+        <h2 id="title">Основная информация о погоде</h2>
+        <div class="row" style="font-size: 25px;">
+            <div class="col-md-3" style="background-color:bisque">Температура</div>
+            <div class="col-md-3" style="background-color:bisque">Ветер</div>
+            <div class="col-md-3" style="background-color:bisque">Облачность</div>
+            <div class="col-md-3" style="background-color:bisque">Давление</div>
+
+        </div>
+        <div class="row" style="font-size: 25px;">
+            <div id="temp" class="col-md-3" style="background-color:bisque"></div>
+            <div id="wind" class="col-md-3" style="background-color:bisque"></div>
+            <div id="cloud" class="col-md-3" style="background-color:bisque"></div>
+            <div id="pressure" class="col-md-3" style="background-color:bisque"></div>
+        </div>
+
+    </div>
+
+    <script src="1.js"></script>
+</body>
+
+</html>
